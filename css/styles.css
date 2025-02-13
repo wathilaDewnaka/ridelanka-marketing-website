@@ -615,3 +615,25 @@ button:focus,
     flex: 0 0 100%;
   }
 }
+@media (max-width: 480px) {
+  .about .content {
+    text-align: center;
+  }
+}
+
+.about .content h2 {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.about .about-slider .item {
+  padding: 20px;
+}
+
+.about .about-slider .owl-dots .owl-dot:hover span {
+  background: #2e7eed;
+}
+
+.about .about-slider .owl-dots .owl-dot.active span {
+  background: #2e7eed;
+}
