@@ -5,8 +5,11 @@
     // AOS
     // ----------------------------
     AOS.init({
-      once: true
+      duration: 2000, // Animation duration in milliseconds
+      once: false,    // Allows animations to replay on scroll up
+      mirror: true    // Trigger animations when scrolling up
     });
+    
   
     
     $(window).on('scroll', function () {
