@@ -17,6 +17,15 @@
   <!-- PLUGINS CSS STYLE -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
 
   <!-- CUSTOM CSS -->
   <link href="css/styles.css" rel="stylesheet">
@@ -41,7 +50,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
@@ -63,7 +72,7 @@
 </nav>
 
 <!-- Home Section -->
-<section id="home" class="section gradient-banner">
+<section id="home" class="section gradient-banner" >
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
@@ -83,10 +92,10 @@
   <div class="container">
     <div class="rounded shadow p-5 bg-white">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center" data-aos="fade-right">
           <h2>About RideLanka</h2>
 
-          <p class="regular text-muted"> RideLanka is a smart and reliable transport solution designed to make commuting safer, more efficient, and stress-free for students and office 
+          <p class="regular text-muted pt-4"> RideLanka is a smart and reliable transport solution designed to make commuting safer, more efficient, and stress-free for students and office 
             staff. Whether you need to find the nearest school or staff transport, book a ride effortlessly, or view available seats in real-time, RideLanka ensures a seamless travel experience. With AI-powered price prediction, drivers can list their services at competitive rates, while parents receive instant notifications when their child is dropped off safely. Our automated attendance marking guarantees accountability, and the AI chatbot provides 24/7 assistance for any queries. RideLanka is more than just a transport service—it’s your trusted companion for a smooth and secure journey!</p>
         </div>
       </div>
@@ -102,7 +111,7 @@
         <h2>Features</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row pt-5" data-aos="fade-left">
       <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
         <i class="ti-location-pin text-primary h1"></i>
         <h3 class="mt-4 text-capitalize h5">Real-Time Tracking</h3>
@@ -125,7 +134,7 @@
 <!-- Developer Team Section -->
 <section id="team" class="section team">
   <div class="container">
-    <div class="row">
+    <div class="row"data-aos="fade-right">
       <div class="col-lg-12">
         <h2 class="text-center mb-5">Meet Our Developer Team</h2>
         
@@ -252,6 +261,84 @@
   </div>
 </section>
 
+<!-- FAQ Section -->
+<section id="faq" class="section bg-gray">
+  <div class="container p-0">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="col-lg-12 mt-4">
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                  How does real-time tracking work?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our app uses GPS technology to provide real-time location updates of vehicles. Parents and organizations can track their assigned transport through the RideLanka app with accurate location data refreshed every 30 seconds.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                  How is attendance marked?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+              <div class="card-body">
+                Attendance is automatically marked when students board and exit the vehicle using our smart check-in system. Parents receive instant notifications for both pickup and drop-off events.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                  What safety features are included?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our safety features include emergency alerts and instant notifications. We also maintain regular vehicle safety inspections and provide 24/7 support through our AI chatbot.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour">
+                  How do I book a transport service?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
+              <div class="card-body">
+                Simply download the RideLanka app, create an account, and select your preferred transport service. You can view available routes, seats, and prices before booking. Our powereful system will help you find the most suitable option.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Footer -->
 <footer>
   <div class="footer-main">
@@ -282,7 +369,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
           <div class="block-2">
-            <h6></h6>
+            <h6>More Details</h6>
             <ul>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#download">Download</a></li>
@@ -298,9 +385,15 @@
 </footer>
 
 <!-- JAVASCRIPTS -->
+
 <script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<script src="js/script.js"></script> 
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+
+  <script src="js/script.js"></script> 
 
 </body>
 </html>
