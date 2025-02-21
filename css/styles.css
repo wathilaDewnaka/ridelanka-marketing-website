@@ -641,40 +641,124 @@ button:focus,
   }
 }
 
-.about .content h2 {
-  margin-bottom: 20px;
-  text-transform: capitalize;
+
+
+/* About Section Styling */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
-.about .about-slider .item {
-  padding: 20px;
+.about-box {
+  max-width: 900px;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 81, 237, 0.2);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
-.about .about-slider .owl-dots .owl-dot:hover span {
-  background: #2e7eed;
+.about-box:hover {
+  transform: translateY(-5px);
 }
 
-.about .about-slider .owl-dots .owl-dot.active span {
-  background: #2e7eed;
+/* Title Styling */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0051ED;
+  text-transform: uppercase;
 }
 
-.feature .feature-content h2,
-.feature .feature-content p {
+.highlight-text {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #555;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
+/* Features List */
+.about-features {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-features li {
+  font-size: 18px;
+  color: #444;
+  padding: 15px 20px;
+  background: #eaf2ff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 81, 237, 0.1);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  width: 90%;
+  max-width: 400px;
+}
+
+.about-features li:hover {
+  background: #0051ED;
+  color: white;
+  transform: scale(1.05);
+}
+
+.about-features li i {
+  font-size: 22px;
+  color: #0051ED;
+  margin-right: 12px;
+}
+
+.about-features li:hover i {
+  color: white;
+}
+.about-description {
+  background: #0051ED; /* Primary blue background */
+  color: #FFFFFF; /* White text color */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 20px;
+  border-left: 5px solid #003FAD; /* Darker blue left border for depth */
+  border-radius: 8px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0, 81, 237, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-description:hover {
+  background: #003FAD; /* Darker shade on hover */
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .feature .feature-content h2,
-  .feature .feature-content p {
-    text-align: center;
+  .about-box {
+    padding: 30px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .about-features {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (max-width: 768px) {
-  .feature .testimonial {
-    text-align: center;
-  }
-}
 
 
 /* feature section */
