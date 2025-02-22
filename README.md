@@ -2,7 +2,7 @@
 
 This is the official marketing website for **RideLanka**, a school and staff transport app in Sri Lanka. 🇱🇰
 
-🌐 **Hosted URL:** 
+🌐 **Hosted URL:** www.ridelanka.org
 
 ## ✨ Features
 - 📱 Responsive design
