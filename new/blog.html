@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        nav h1 {
+            margin-bottom: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        nav a.active {
+            color: #0066cc;
+        }
+        
+        main {
+            padding: 20px 0;
+        }
+        
+        .blog-post {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .post-meta {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+        
+        .post-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+        }
+        
+        /* Ad spaces styling */
+        .ad-container {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ad-container p {
+            color: #999;
+        }
+        
+        .ad-sidebar {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        /* Responsive layout */
+        @media (min-width: 768px) {
+            .content-wrapper {
+                grid-template-columns: 7fr 3fr;
+            }
+            
+            .ad-leaderboard {
+                height: 90px;
+            }
+            
+            .ad-rectangle {
+                height: 250px;
+            }
+            
+            .ad-skyscraper {
+                height: 600px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .ad-container {
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Blog</h1>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Top leaderboard ad -->
+    <div class="ad-container ad-leaderboard">
+        <p>Advertisement Space (Leaderboard 728x90)</p>
+    </div>
+    
+    <div class="content-wrapper">
+        <main>
+            <article class="blog-post">
+                <h2>Getting Started with Web Development</h2>
+                <div class="post-meta">Posted on April 10, 2024 by John Doe</div>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Coding on laptop" class="post-image">
+                <p>Web development is an exciting journey that begins with understanding the basics of HTML, CSS, and JavaScript. These fundamental technologies form the backbone of modern web applications...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            
+            <!-- In-content ad -->
+            <div class="ad-container ad-rectangle">
+                <p>Advertisement Space (Rectangle 300x250)</p>
+            </div>
+            
+            <article class="blog-post">
+                <h2>The Art of CSS Styling</h2>
+                <div class="post-meta">Posted on April 8, 2024 by Jane Smith</div>
+                <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2" alt="Design process" class="post-image">
+                <p>CSS is more than just styling; it's an art form that allows developers to create beautiful and responsive web designs. In this post, we'll explore some advanced CSS techniques...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            
+            <!-- In-content ad -->
+            <div class="ad-container ad-rectangle">
+                <p>Advertisement Space (Rectangle 300x250)</p>
+            </div>
+            
+            <article class="blog-post">
+                <h2>Building Responsive Layouts</h2>
+                <div class="post-meta">Posted on April 5, 2024 by Mike Johnson</div>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Responsive design" class="post-image">
+                <p>Creating responsive layouts is crucial in today's multi-device world. Learn how to use CSS Grid and Flexbox to build layouts that work seamlessly across all screen sizes...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+        
+        <!-- Sidebar with ads -->
+        <aside>
+            <div class="ad-sidebar">
+                <p>Advertisement Space (Medium Rectangle 300x250)</p>
+            </div>
+            
+            <div class="ad-sidebar ad-skyscraper">
+                <p>Advertisement Space (Skyscraper 160x600)</p>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Bottom ad before footer -->
+    <div class="ad-container">
+        <p>Advertisement Space (Leaderboard 728x90)</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
